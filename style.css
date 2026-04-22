@@ -1606,6 +1606,10 @@ body {
 .bb-case-goals__item-content {
   max-width: 380px;
   padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 160px;
 }
 
 .bb-case-goals__item-title {
