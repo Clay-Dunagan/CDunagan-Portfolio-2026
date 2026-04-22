@@ -1474,16 +1474,16 @@ body {
   margin: 0 auto;
   padding: 0 48px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 64px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 72px;
+  align-items: start;
 }
 
 .bb-case-goals__left {
   display: flex;
   flex-direction: column;
-  padding-top: 0;
-  transform: none;
+  justify-content: center;
+  min-height: 100%;
 }
 
 .bb-case-goals__eyebrow {
@@ -1496,7 +1496,7 @@ body {
 
 .bb-case-goals__title {
   margin: 0 0 28px;
-  max-width: 500px;
+  max-width: 560px;
   font-size: 3.35rem;
   line-height: 1.08;
   font-weight: 500;
@@ -1505,7 +1505,7 @@ body {
 }
 
 .bb-case-goals__intro {
-  margin: 0 0 40px;
+  margin: 0 0 36px;
   max-width: 560px;
   font-size: 1rem;
   line-height: 1.7;
@@ -1517,7 +1517,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .bb-case-goals__criteria-icon {
@@ -1579,12 +1579,11 @@ body {
 
 .bb-case-goals__item {
   display: grid;
-  grid-template-columns: 184px 1fr;
+  grid-template-columns: 160px minmax(0, 1fr);
   gap: 32px;
-  align-items: start;
-  padding: 32px 0;
+  align-items: center;
+  padding: 28px 0;
   border-top: 1px solid #dddddd;
-  min-height: 210px;
 }
 
 .bb-case-goals__item:last-child {
@@ -1592,7 +1591,10 @@ body {
 }
 
 .bb-case-goals__item-image-wrapper {
-  width: 184px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bb-case-goals__item-image {
@@ -1602,8 +1604,8 @@ body {
 }
 
 .bb-case-goals__item-content {
-  max-width: 360px;
-  padding-top: 2px;
+  max-width: 380px;
+  padding-top: 0;
 }
 
 .bb-case-goals__item-title {
@@ -1622,26 +1624,24 @@ body {
   color: #3d3d3d;
 }
 
+/* Remove the one-off first item behavior */
 .bb-case-goals__item:first-child {
+  grid-template-columns: 160px minmax(0, 1fr);
   align-items: center;
-  grid-template-columns: 210px 1fr;
 }
 
 .bb-case-goals__item:first-child .bb-case-goals__item-content {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .bb-case-goals__item:first-child .bb-case-goals__item-image-wrapper {
-  display: flex;
-  align-items: center;
-  overflow: visible;
-  width: 210px;
-  min-height: 172px;
+  width: 160px;
+  min-height: auto;
+  overflow: hidden;
 }
 
 .bb-case-goals__item:first-child .bb-case-goals__item-image {
-  transform: scale(1.32);
-  transform-origin: center;
+  transform: none;
 }
 
 /* ==========================================
