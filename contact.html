@@ -18,7 +18,19 @@
       />
     </a>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <button
+      class="site-header__menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+    >
+      <span class="site-header__menu-line" aria-hidden="true"></span>
+      <span class="site-header__menu-line" aria-hidden="true"></span>
+      <span class="site-header__menu-line" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
       <ul class="site-nav__list">
         <li class="site-nav__item">
           <a href="about.html" class="site-nav__link">About</a>
@@ -80,7 +92,6 @@
   </div>
 </header>
 
-<main>
 <main class="contact-page">
   <section class="contact-hero-section">
     <div class="contact-hero-container">
@@ -145,7 +156,6 @@
     </div>
   </section>
 </main>
-</main>
 
 <footer class="site-footer">
   <div class="site-footer__container">
@@ -202,4 +212,3 @@
 
 </body>
 </html>
-

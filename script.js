@@ -1,3 +1,7 @@
+/* =========================================================
+   Desktop / Mobile Case Studies Dropdown
+========================================================= */
+
 const dropdownItem = document.querySelector(".site-nav__item--dropdown");
 const dropdownToggle = document.querySelector(".site-nav__dropdown-toggle");
 
@@ -43,6 +47,69 @@ if (dropdownItem && dropdownToggle) {
   });
 }
 
+/* =========================================================
+   Mobile Hamburger Menu
+========================================================= */
+
+const menuToggle = document.querySelector(".site-header__menu-toggle");
+const primaryNav = document.querySelector("#primary-navigation");
+
+if (menuToggle && primaryNav) {
+  const closeMobileMenu = () => {
+    primaryNav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+  };
+
+  const openMobileMenu = () => {
+    primaryNav.classList.add("is-open");
+    menuToggle.setAttribute("aria-expanded", "true");
+    menuToggle.setAttribute("aria-label", "Close navigation menu");
+  };
+
+  menuToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    const isOpen = primaryNav.classList.contains("is-open");
+
+    if (isOpen) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  document.addEventListener("click", function (event) {
+    const clickedInsideHeader = event.target.closest(".site-header");
+
+    if (!clickedInsideHeader) {
+      closeMobileMenu();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeMobileMenu();
+    }
+  });
+
+  primaryNav.querySelectorAll("a").forEach((navLink) => {
+    navLink.addEventListener("click", () => {
+      closeMobileMenu();
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      closeMobileMenu();
+    }
+  });
+}
+
+/* =========================================================
+   Global Image Lightbox
+========================================================= */
+
 const lightbox = document.getElementById("imageLightbox");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxClose = document.querySelector(".lightbox__close");
@@ -76,8 +143,13 @@ if (lightbox && lightboxImage && lightboxClose && lightboxOverlay && lightboxTri
       closeLightbox();
     }
   });
+}
 
-  document.querySelectorAll(".bb-case-final-design").forEach((section) => {
+/* =========================================================
+   Bianco Brothers Final Design Carousel
+========================================================= */
+
+document.querySelectorAll(".bb-case-final-design").forEach((section) => {
   const track = section.querySelector(".bb-case-final-design__track");
   const slides = Array.from(section.querySelectorAll(".bb-case-final-design__slide"));
   const prevBtn = section.querySelector(".bb-case-final-design__arrow--left");
@@ -161,4 +233,3 @@ if (lightbox && lightboxImage && lightboxClose && lightboxOverlay && lightboxTri
   buildDots();
   updateCarousel();
 });
-}
