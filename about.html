@@ -1,21 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Clayton Dunagan</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta
+    name="description"
+    content="Learn how Austin-based designer Clayton Dunagan combines digital strategy, UX research, UI design, front-end development, and client delivery."
+  />
+  <title>About Clayton Dunagan | UX/UI Designer &amp; Digital Strategist</title>
+  <meta name="author" content="Clayton Dunagan" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#13261d" />
+  <link rel="canonical" href="https://cdunagan.com/about.html" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Clayton Dunagan" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="About Clayton Dunagan | UX/UI Designer &amp; Digital Strategist" />
+  <meta property="og:description" content="How Clayton combines digital strategy, UX research, UI design, front-end development, and client delivery." />
+  <meta property="og:url" content="https://cdunagan.com/about.html" />
+  <meta property="og:image" content="https://cdunagan.com/social/clayton-dunagan.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Portrait of Clayton Dunagan" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Clayton Dunagan | UX/UI Designer &amp; Digital Strategist" />
+  <meta name="twitter:description" content="How Clayton combines digital strategy, UX research, UI design, front-end development, and client delivery." />
+  <meta name="twitter:image" content="https://cdunagan.com/social/clayton-dunagan.jpg" />
+  <meta name="twitter:image:alt" content="Portrait of Clayton Dunagan" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://cdunagan.com/about.html#webpage",
+          "url": "https://cdunagan.com/about.html",
+          "name": "About Clayton Dunagan | UX/UI Designer & Digital Strategist",
+          "description": "Learn how Austin-based designer Clayton Dunagan combines digital strategy, UX research, UI design, front-end development, and client delivery.",
+          "isPartOf": {"@id": "https://cdunagan.com/#website"},
+          "mainEntity": {"@id": "https://cdunagan.com/#person"},
+          "primaryImageOfPage": {"@id": "https://cdunagan.com/about.html#primaryimage"},
+          "breadcrumb": {"@id": "https://cdunagan.com/about.html#breadcrumb"},
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://cdunagan.com/#person",
+          "name": "Clayton Dunagan",
+          "url": "https://cdunagan.com/",
+          "image": {"@id": "https://cdunagan.com/about.html#primaryimage"},
+          "jobTitle": "Multidisciplinary Digital Professional",
+          "description": "Austin-based digital professional working across strategy, UX/UI design, front-end development, and client delivery.",
+          "homeLocation": {"@type": "Place", "name": "Austin, Texas"},
+          "sameAs": ["https://www.linkedin.com/in/clayton-dunagan-955a961ab/"],
+          "knowsAbout": ["Digital Strategy", "UX Research", "UX/UI Design", "Front-End Development", "Project Delivery"]
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://cdunagan.com/about.html#primaryimage",
+          "url": "https://cdunagan.com/social/clayton-dunagan.jpg",
+          "contentUrl": "https://cdunagan.com/social/clayton-dunagan.jpg",
+          "width": 1200,
+          "height": 630,
+          "caption": "Portrait of Clayton Dunagan"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://cdunagan.com/about.html#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cdunagan.com/"},
+            {"@type": "ListItem", "position": 2, "name": "About", "item": "https://cdunagan.com/about.html"}
+          ]
+        }
+      ]
+    }
+  </script>
+  <link rel="stylesheet" href="style.css?v=20261022-about-4" />
 </head>
-<body>
+<body class="about-page-v2">
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header class="site-header">
   <div class="site-header__container">
     <a href="index.html" class="site-header__logo-link" aria-label="Clayton Dunagan home">
-      <img
-        src="./assets:/img:/global:/cdunagan-light-logo.png"
-        alt="Clayton Dunagan logo"
-        class="site-header__logo"
-      />
+      <img width="1200" height="280" src="./assets:/img:/global:/cdunagan-light-logo.png" alt="Clayton Dunagan" class="site-header__logo" decoding="async">
     </a>
 
     <button
@@ -32,305 +102,228 @@
 
     <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
       <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a href="about.html" class="site-nav__link">About</a>
-        </li>
-
+        <li class="site-nav__item"><a href="about.html" class="site-nav__link" aria-current="page">About</a></li>
         <li class="site-nav__item site-nav__item--dropdown">
           <div class="site-nav__dropdown-trigger">
             <a href="case-studies.html" class="site-nav__link">Case Studies</a>
-
-            <button
-              class="site-nav__link site-nav__link--with-icon site-nav__dropdown-toggle"
-              type="button"
-              aria-expanded="false"
-              aria-controls="case-studies-dropdown"
-              aria-label="Open Case Studies menu"
-            >
+            <button class="site-nav__link site-nav__link--with-icon site-nav__dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="case-studies-dropdown" aria-label="Open Case Studies menu">
               <span class="site-nav__chevron" aria-hidden="true">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 9L12 15L18 9"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
               </span>
             </button>
           </div>
-
           <div class="site-nav__dropdown" id="case-studies-dropdown">
-            <a href="case-studies.html" class="site-nav__dropdown-link">
-              Case Studies Overview
-            </a>
-            <a href="bianco-brothers-case-study.html" class="site-nav__dropdown-link">
-              Bianco Brothers Case Study
-            </a>
-            <a href="sheltr-case-study.html" class="site-nav__dropdown-link">
-              Sheltr Case Study
-            </a>
+            <a href="case-studies.html" class="site-nav__dropdown-link">Case Studies Overview</a>
+            <a href="trinity-environmental-case-study.html" class="site-nav__dropdown-link">Trinity Environmental</a>
+            <a href="bianco-brothers-case-study.html" class="site-nav__dropdown-link">Bianco Brothers</a>
+            <a href="sheltr-case-study.html" class="site-nav__dropdown-link">Sheltr</a>
           </div>
         </li>
-
-        <li class="site-nav__item">
-          <a href="resume.html" class="site-nav__link">Resume</a>
-        </li>
-
-        <li class="site-nav__item">
-          <a href="contact.html" class="site-nav__link">Contact</a>
-        </li>
+        <li class="site-nav__item"><a href="resume.html" class="site-nav__link">Resume</a></li>
+        <li class="site-nav__item"><a href="contact.html" class="site-nav__link">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="about-page">
-  <section class="about-hero">
-    <div class="about-hero__container">
-      <div class="about-hero__content">
-        <h1 class="about-hero__title">
-          Design focused on people, clarity, and real-world use
-        </h1>
-        <p class="about-hero__text">
-          From understanding the problem to delivering usable interfaces.
+<main id="main-content" tabindex="-1">
+  <section class="about-v2-hero" aria-labelledby="about-v2-hero-title">
+    <div class="about-v2-hero__container">
+      <div class="about-v2-hero__content">
+        <p class="section-kicker">About Clayton Dunagan</p>
+        <h1 id="about-v2-hero-title" class="about-v2-hero__title">I connect strategy, design, and delivery.</h1>
+        <p class="about-v2-hero__intro">
+          My background spans creative project management, UX research, interface design, front-end development, and client delivery. I use that range to understand problems from multiple angles and carry practical digital solutions beyond the design file.
         </p>
       </div>
 
-      <div class="about-hero__image-wrapper">
-        <img
-          src="./assets:/img:/pages:/about:/About-Hero.jpg"
-          alt="Portrait of Clayton Dunagan"
-          class="about-hero__image"
-        />
+      <div class="about-v2-hero__portrait">
+        <div class="about-v2-hero__portrait-stack">
+          <div class="about-v2-hero__portrait-frame">
+            <img width="1350" height="1800" src="./assets:/img:/pages:/about:/About-Hero.optimized.jpg" alt="Portrait of Clayton Dunagan" class="about-v2-hero__image" decoding="async" fetchpriority="high">
+          </div>
+        </div>
+        <ul class="about-v2-hero__labels" aria-label="Connected disciplines">
+          <li>Strategy</li>
+          <li>Design</li>
+          <li>Launch</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="about-intro">
-    <div class="about-intro__container">
-      <div class="about-intro__top">
-        <p class="about-intro__eyebrow">How I Got Here</p>
-
-        <a
-          href="https://www.linkedin.com/in/clayton-dunagan-955a961ab/"
-          class="about-intro__linkedin"
-          aria-label="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            class="site-footer__social-icon"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 3C4.17 3 3.5 3.71 3.5 4.64C3.5 5.55 4.15 6.29 5.21 6.29H5.23C6.33 6.29 7 5.55 7 4.64C6.98 3.71 6.33 3 5.25 3ZM20.5 12.39C20.5 8.86 18.62 7.22 16.12 7.22C14.1 7.22 13.2 8.33 12.69 9.11V8.5H9.31C9.35 9.5 9.31 20 9.31 20H12.69V13.58C12.69 13.24 12.72 12.91 12.81 12.67C13.08 12.01 13.69 11.32 14.73 11.32C16.09 11.32 16.63 12.35 16.63 13.87V20H20V13.48C20 9.99 18.14 8.5 15.66 8.5C14.06 8.5 13.35 9.38 12.94 10V8.5H9.56C9.6 9.47 9.56 20 9.56 20H12.94V13.38C12.94 13.03 12.97 12.69 13.06 12.45C13.31 11.79 13.87 11.11 14.9 11.11C16.24 11.11 16.81 12.14 16.81 13.66V20H20.19V13.27C20.19 9.76 18.36 8.5 16.12 8.5C14.31 8.5 13.42 9.52 12.94 10.18V8.5H9.56C9.61 9.5 9.56 20 9.56 20H12.94V13.58C12.94 13.24 12.97 12.91 13.06 12.67C13.33 12.01 13.94 11.32 14.98 11.32C16.34 11.32 16.88 12.35 16.88 13.87V20H20.25L20.5 12.39Z"
-            />
-          </svg>
-        </a>
+  <section class="about-v2-story" id="professional-story" aria-labelledby="about-v2-story-title">
+    <div class="site-container about-v2-story__layout">
+      <div class="about-v2-story__heading">
+        <p class="section-kicker">Professional Story</p>
+        <h2 id="about-v2-story-title">How I Got Here</h2>
       </div>
 
-      <div class="about-intro__content">
-        <div class="about-intro__text">
+      <ol class="about-v2-story__chapters">
+        <li>
+          <span class="about-v2-story__number" aria-hidden="true">01</span>
           <p>
-            I didn’t come into design through a straight-line tech path. My
-            background is in the music business, where working with people,
-            pressure, and real deadlines was part of the job. That experience
-            shaped how I communicate, collaborate, and stay focused on outcomes
-            long before I ever worked in design.
+            I did not arrive in digital work through a traditional technology path. For nearly a decade, I supported independent artists and creative projects by coordinating clients, releases, promotions, events, schedules, vendors, and shifting priorities. That work taught me how to listen carefully, communicate clearly, and keep complicated projects moving.
           </p>
-
+        </li>
+        <li>
+          <span class="about-v2-story__number" aria-hidden="true">02</span>
           <p>
-            Being close to creative work in high-pressure environments taught me
-            that good results don’t come from theory alone. They come from
-            listening, iteration, and making clear decisions under constraints.
-            That perspective carries directly into how I approach design —
-            prioritizing usability, clarity, and real-world impact over
-            surface-level polish.
+            When I moved into UX and digital product work, those skills gave me a practical foundation. I learned to turn research into structure, test assumptions, communicate decisions, and design for people working within real constraints.
           </p>
-
+        </li>
+        <li>
+          <span class="about-v2-story__number" aria-hidden="true">03</span>
           <p>
-            Today, I bring that mindset into product and UX work by understanding the problem, asking the right questions, and delivering interfaces that are clear and usable. I’m interested in design that
-            holds up in real conditions — not just in ideal scenarios.
+            Today, I bring those disciplines together through Signalhead Digital and client work spanning research, strategy, UX/UI design, front-end development, quality assurance, launch, and ongoing support. I am most useful when a project begins with uncertainty and needs someone who can create clarity, make decisions, and carry the work forward.
           </p>
-        </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-        <div class="about-intro__quote-block">
-          <p class="about-intro__quote">
-            Good design is the result of clear problem definition.
-            <br />
-            The interface is just the final expression of that work.
-          </p>
+  <section class="about-v2-practice" aria-labelledby="about-v2-point-title">
+    <div class="site-container">
+      <div class="about-v2-point">
+        <p class="section-kicker section-kicker--light">Working Point of View</p>
+        <h2 id="about-v2-point-title">Good digital work starts with a clearly understood problem.</h2>
+        <p>Strategy gives it direction, research reduces assumptions, and design turns those decisions into something people can use.</p>
 
-          <div class="about-intro__tags">
-            <span class="about-intro__tag">Problem-driven</span>
-            <span class="about-intro__tag">Research-informed</span>
-            <span class="about-intro__tag">Systems-minded</span>
-            <span class="about-intro__tag">User-centered</span>
-          </div>
-        </div>
+        <ul class="about-v2-point__principles" aria-label="Working principles">
+          <li>Problem-led</li>
+          <li>Research-informed</li>
+          <li>Business-aware</li>
+          <li>Built for real use</li>
+        </ul>
       </div>
 
-      <div class="about-intro__footer">
-        <div class="about-intro__footer-line"></div>
-
-        <div class="about-intro__identity">
-          <p class="about-intro__name">Clayton Dunagan</p>
-          <p class="about-intro__role">UI / UX Designer</p>
+      <div class="about-v2-process" aria-labelledby="about-v2-process-title">
+        <div class="about-v2-process__intro">
+          <p class="section-kicker">Process</p>
+          <h2 id="about-v2-process-title">A practical path from uncertainty to delivery</h2>
+          <p>
+            The exact process changes with each project, but the objective stays consistent: understand what matters, make informed decisions, and keep the work moving toward a usable result. I connect research, strategy, design, development, and delivery instead of treating them as disconnected stages.
+          </p>
         </div>
+
+        <ol class="about-v2-process__steps">
+          <li>
+            <span class="about-v2-process__number">01</span>
+            <span class="about-v2-process__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+            </span>
+            <div>
+              <h3>Clarify the problem and priorities</h3>
+              <p>I begin by understanding the people involved, the business goals, the available evidence, the technical realities, and the constraints that will shape the work.</p>
+            </div>
+          </li>
+          <li>
+            <span class="about-v2-process__number">02</span>
+            <span class="about-v2-process__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 7h7v5H4zM13 12h7v5h-7z"></path><path d="M11 9.5h2M8 12v5h5"></path></svg>
+            </span>
+            <div>
+              <h3>Turn findings into structure</h3>
+              <p>I translate what I learn into positioning, requirements, content hierarchy, information architecture, user flows, and a clearer plan for what needs to be created.</p>
+            </div>
+          </li>
+          <li>
+            <span class="about-v2-process__number">03</span>
+            <span class="about-v2-process__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M8 10h8M8 14h5"></path></svg>
+            </span>
+            <div>
+              <h3>Design, test, and refine</h3>
+              <p>I develop wireframes, prototypes, and interfaces with responsive behavior, accessibility, and real use in mind. Feedback and testing help reveal what should be clarified, simplified, or reconsidered.</p>
+            </div>
+          </li>
+          <li>
+            <span class="about-v2-process__number">04</span>
+            <span class="about-v2-process__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 19 19 5M10 5h9v9"></path><path d="M5 9v10h10"></path></svg>
+            </span>
+            <div>
+              <h3>Carry decisions through delivery</h3>
+              <p>I carry the work as far into implementation as the project requires, supporting front-end development, quality assurance, launch, handoff, and continued improvement so the finished experience stays connected to its original goals.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
 
-  <section class="about-process">
-    <div class="about-process__container">
-      <div class="about-process__header">
-        <div class="about-process__header-left">
-          <p class="about-process__eyebrow">Process</p>
-          <h2 class="about-process__title">Research first, then design with purpose</h2>
-        </div>
-
-        <div class="about-process__header-right">
-          <p class="about-process__text">
-            I start with real user needs rather than visual ideas. That means asking clear questions early, validating
-            assumptions quickly, and making decisions based on how people
-            actually use products — not how they look in a design file. The goal
-            is simple: build interfaces that work in real conditions and hold up
-            over time.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-process__grid">
-        <article class="about-process-card">
-          <div class="about-process-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="about-process-card__icon-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="4" width="12" height="8" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
-              <circle cx="10" cy="8" r="1.6" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M7.5 18.5C7.5 16.8431 8.84315 15.5 10.5 15.5C12.1569 15.5 13.5 16.8431 13.5 18.5V20H7.5V18.5Z" stroke="currentColor" stroke-width="1.8"/>
-            </svg>
-          </div>
-          <h3 class="about-process-card__title">Start with what users do, not the screen</h3>
-          <p class="about-process-card__text">
-            Every decision traces back to understanding what people are trying to
-            do, where they get stuck, and what success actually looks like for
-            them.
-          </p>
-        </article>
-
-        <article class="about-process-card">
-          <div class="about-process-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="about-process-card__icon-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17 9.5C17 6.73858 14.7614 4.5 12 4.5C9.23858 4.5 7 6.73858 7 9.5C7 12.2614 9.23858 14.5 12 14.5H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M12.6 12.1L15 14.5L12.6 16.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="about-process-card__title">Test early, iterate often</h3>
-          <p class="about-process-card__text">
-            I prefer learning through use rather than debate. Early feedback helps
-            catch issues fast and builds confidence before things scale.
-          </p>
-        </article>
-
-        <article class="about-process-card">
-          <div class="about-process-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="about-process-card__icon-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="7" y="7" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M4 9V7C4 5.89543 4.89543 5 6 5H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M16 5H18C19.1046 5 20 5.89543 20 7V9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M20 15V17C20 18.1046 19.1046 19 18 19H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M8 19H6C4.89543 19 4 18.1046 4 17V15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="about-process-card__title">Design systems that scale</h3>
-          <p class="about-process-card__text">
-            I think beyond single screens. Consistency, structure, and shared
-            patterns help teams move faster and keep products understandable as
-            they grow.
-          </p>
-        </article>
-
-        <article class="about-process-card">
-          <div class="about-process-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="about-process-card__icon-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.8"/>
-              <circle cx="12" cy="9" r="1.4" fill="currentColor"/>
-              <circle cx="9" cy="14.5" r="1.4" fill="currentColor"/>
-              <circle cx="15" cy="14.5" r="1.4" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3 class="about-process-card__title">Work closely with others</h3>
-          <p class="about-process-card__text">
-            Good products are built collaboratively. Design, product, and
-            engineering work best when decisions are shared and communication
-            stays honest.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-skills">
-    <div class="about-skills__container">
-      <div class="about-skills__intro">
-        <p class="about-skills__eyebrow">Skills</p>
-        <h2 class="about-skills__title">Tools, methods, and process</h2>
-        <p class="about-skills__text">
-          Tools and methods that help me solve problems and communicate ideas
-          clearly to teams and stakeholders.
+  <section class="about-v2-capabilities" aria-labelledby="about-v2-capabilities-title">
+    <div class="site-container">
+      <div class="about-v2-capabilities__intro">
+        <p class="section-kicker">Capabilities</p>
+        <h2 id="about-v2-capabilities-title">Skills that connect the work</h2>
+        <p>
+          My value comes less from any individual tool and more from being able to connect discovery, decision-making, design, implementation, and client delivery. These are the capabilities I use most often.
         </p>
       </div>
 
-      <div class="about-skills__card">
-        <div class="about-skills__card-left">
-          <div class="about-skills__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" class="about-skills__icon-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="5" width="7" height="14" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
-              <rect x="14" y="8" width="6" height="11" rx="1.5" stroke="currentColor" stroke-width="1.8"/>
-              <path d="M7.5 8.5H7.51" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M17 11.5H17.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <div class="about-v2-capabilities__grid">
+        <article class="about-v2-capability">
+          <span class="about-v2-capability__icon" aria-hidden="true">01</span>
+          <h3>Digital Strategy and Discovery</h3>
+          <p>Stakeholder discovery, competitive research, business and user needs, content and service mapping, positioning, project scoping, and prioritization.</p>
+        </article>
+        <article class="about-v2-capability">
+          <span class="about-v2-capability__icon" aria-hidden="true">02</span>
+          <h3>UX and Product Design</h3>
+          <p>User interviews, surveys, personas, journey maps, information architecture, user flows, wireframes, prototyping, usability testing, responsive design, and accessibility planning.</p>
+        </article>
+        <article class="about-v2-capability">
+          <span class="about-v2-capability__icon" aria-hidden="true">03</span>
+          <h3>Interface and Front-End Development</h3>
+          <p>UI design, component systems, HTML, CSS, JavaScript, responsive development, technical SEO, analytics, and event tracking.</p>
+        </article>
+        <article class="about-v2-capability">
+          <span class="about-v2-capability__icon" aria-hidden="true">04</span>
+          <h3>Project and Client Delivery</h3>
+          <p>Proposals, schedules, client communication, documentation, quality assurance, launch coordination, handoff, and ongoing support.</p>
+        </article>
+      </div>
+
+      <div class="about-v2-tools">
+        <div class="about-v2-tools__label">
+          <span aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 6V4h6v2"></path>
+              <rect x="3" y="6" width="18" height="14" rx="2"></rect>
+              <path d="M3 11h18M10 11v2h4v-2"></path>
             </svg>
-          </div>
-
-          <h3 class="about-skills__card-title">Design tools and workflows</h3>
-          <p class="about-skills__card-text">
-            I use tools like Figma to design interfaces, explore ideas quickly,
-            and communicate intent clearly across web and mobile products.
-          </p>
+          </span>
+          <h3>Tools</h3>
         </div>
-
-        <div class="about-skills__list">
-          <div class="about-skills__list-item">UI Design</div>
-          <div class="about-skills__list-item">User Research</div>
-          <div class="about-skills__list-item">Prototyping</div>
-          <div class="about-skills__list-item">Wireframing</div>
-          <div class="about-skills__list-item">Usability Testing</div>
-          <div class="about-skills__list-item">Design Systems</div>
-        </div>
+        <p>
+          Figma, FigJam, Visual Studio Code, GitHub, Google Analytics 4, Google Workspace, and AI-assisted workflows for research synthesis, planning, documentation, technical problem-solving, debugging, and quality review.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="about-closing">
-    <div class="about-closing__container">
-      <p class="about-closing__text">
-        I enjoy working on problems that aren’t fully defined yet — the messy
-        middle where priorities shift, constraints appear, and clarity has to be
-        earned. I care about making thoughtful decisions, communicating clearly,
-        and building work that teams can stand behind and users can rely on.
-      </p>
+  <section class="about-v2-closing" aria-labelledby="about-v2-closing-title">
+    <div class="site-container about-v2-closing__layout">
+      <div class="about-v2-closing__content">
+        <p class="section-kicker">Where I Do My Best Work</p>
+        <h2 id="about-v2-closing-title">I do my best work when the path is not obvious.</h2>
+        <p>
+          I enjoy projects that begin with competing needs, incomplete information, or an experience that no longer works as well as it should. I bring structure to that uncertainty, help people make practical decisions, and stay involved until the work becomes useful, credible, and ready to move forward.
+        </p>
+        <p>
+          Whether I am working within a team or directly with a client, I value clear communication, thoughtful collaboration, and solutions that serve both the people using them and the business responsible for them.
+        </p>
+
+        <div class="button-group">
+          <a href="case-studies.html" class="button button--primary">View My Work <span aria-hidden="true">↗</span></a>
+          <a href="contact.html" class="button button--secondary">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="about-v2-closing__visual" aria-hidden="true">
+        <img width="178" height="178" src="./favicon.svg" alt="" decoding="async" loading="lazy">
+      </div>
     </div>
   </section>
 </main>
@@ -339,54 +332,24 @@
   <div class="site-footer__container">
     <div class="site-footer__top">
       <a href="index.html" class="site-footer__logo-link" aria-label="Clayton Dunagan home">
-        <img
-          src="./assets:/img:/global:/cdunagan-light-logo.png"
-          alt="Clayton Dunagan logo"
-          class="site-footer__logo"
-        />
+        <img width="1200" height="280" src="./assets:/img:/global:/cdunagan-light-logo.png" alt="Clayton Dunagan" class="site-footer__logo" decoding="async" loading="lazy">
       </a>
 
       <nav class="site-footer__nav" aria-label="Footer navigation">
         <ul class="site-footer__nav-list">
-          <li><a href="about.html" class="site-footer__nav-link">About</a></li>
+          <li><a href="about.html" class="site-footer__nav-link" aria-current="page">About</a></li>
           <li><a href="case-studies.html" class="site-footer__nav-link">Case Studies</a></li>
           <li><a href="resume.html" class="site-footer__nav-link">Resume</a></li>
           <li><a href="contact.html" class="site-footer__nav-link">Contact</a></li>
         </ul>
       </nav>
 
-      <a
-        href="https://www.linkedin.com/in/clayton-dunagan-955a961ab/"
-        class="site-footer__social-link"
-        aria-label="LinkedIn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg
-          class="site-footer__social-icon"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M6.94 8.5H3.56V20H6.94V8.5ZM5.25 3C4.17 3 3.5 3.71 3.5 4.64C3.5 5.55 4.15 6.29 5.21 6.29H5.23C6.33 6.29 7 5.55 7 4.64C6.98 3.71 6.33 3 5.25 3ZM20.5 12.39C20.5 8.86 18.62 7.22 16.12 7.22C14.1 7.22 13.2 8.33 12.69 9.11V8.5H9.31C9.35 9.5 9.31 20 9.31 20H12.69V13.58C12.69 13.24 12.72 12.91 12.81 12.67C13.08 12.01 13.69 11.32 14.73 11.32C16.09 11.32 16.63 12.35 16.63 13.87V20H20V13.48C20 9.99 18.14 8.5 15.66 8.5C14.06 8.5 13.35 9.38 12.94 10V8.5H9.56C9.6 9.47 9.56 20 9.56 20H12.94V13.38C12.94 13.03 12.97 12.69 13.06 12.45C13.31 11.79 13.87 11.11 14.9 11.11C16.24 11.11 16.81 12.14 16.81 13.66V20H20.19V13.27C20.19 9.76 18.36 8.5 16.12 8.5C14.31 8.5 13.42 9.52 12.94 10.18V8.5H9.56C9.61 9.5 9.56 20 9.56 20H12.94V13.58C12.94 13.24 12.97 12.91 13.06 12.67C13.33 12.01 13.94 11.32 14.98 11.32C16.34 11.32 16.88 12.35 16.88 13.87V20H20.25L20.5 12.39Z"
-          />
-        </svg>
-      </a>
-    </div>
-
-    <div class="site-footer__divider"></div>
-
-    <div class="site-footer__bottom">
-      <p class="site-footer__copyright">© 2026 All rights reserved</p>
+      <p class="site-footer__copyright">© 2026 Clayton Dunagan</p>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=20261022-polish-1"></script>
 
 </body>
 </html>
